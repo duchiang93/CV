@@ -100,5 +100,102 @@
         }
       }
     }
+    .sci {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: 100px;
+      li {
+        list-style: none;
+        a {
+          position: relative;
+          display: grid;
+          place-items: center;
+          width: 50px;
+          height: 50px;
+          text-decoration: none;
+          border: 1px solid #feeadf;
+          margin: 10px;
+          transition: all 0.5s;
+          .iconfont {
+            font-size: 30px;
+            color: #feeadf;
+          }
+          &:hover {
+            background-color: #feeadf;
+            .iconfont {
+              color: #bb5a3a;
+            }
+          }
+        }
+      }
+    }
+  }
+  .active header #toggle::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .active header #toggle::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .active {
+    transform: translateX(-400px);
+  }
+  #navigation {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background-color: #feeadf;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    .active {
+      right: 0;
+    }
+    ul {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      li {
+        list-style: none;
+        a {
+          color: #bb5a3a;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 2em;
+          font-weight: 600;
+          text-transform: uppercase;
+          line-height: 100px;
+          .iconfont {
+            font-size: 2rem;
+            margin-right: 3rem;
+          }
+        }
+        :hover,
+        :active {
+          .iconfont {
+            animation: jump 0.3s linear 1 forwards normal;
+            display: inline-block;
+            @keyframes jump {
+              0% {
+                transform: translate3d(0, 0, 0);
+              }
+              100% {
+                transform: translate3d(0, -0.5em, 0);
+              }
+            }
+          }
+        }
+        &:hover {
+          animation: none;
+        }
+      }
+    }
   }
 }

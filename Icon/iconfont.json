@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33519",
+      "name": "home_fill",
+      "font_class": "homefill",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "887903",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "7712195",
+      "name": "个人信息",
+      "font_class": "gerenxinxi",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "9512669",
+      "name": "twitter",
+      "font_class": "twitter-fill",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "9785636",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "10330916",
+      "name": "project",
+      "font_class": "project",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "11215251",
+      "name": "instagram",
+      "font_class": "instagram",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "20284842",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e7b2",
+      "unicode_decimal": 59314
+    },
+    {
+      "icon_id": "22630695",
+      "name": "技能量",
+      "font_class": "jinengliang",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    }
+  ]
+}

@@ -2,172 +2,127 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Consolas;
 }
-.container {
-  font-family: CONSOLA;
+body {
+  background: #fdf2f0;
+  .toggle {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background: #bb5a3a url(../IMG/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .active {
+    background: #bb5a3a url(../IMG/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .banner {
+    padding: 100px;
+    min-height: 100vh;
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    background-color: #bb5a3a;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    transition: 0.5s;
-    z-index: 2;
-    header {
+    .imgSidebar {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 40px 100px;
-      z-index: 1000;
-      transition: 0.6s;
-      .logo {
-        position: relative;
-        font-weight: 700;
-        color: #feeadf;
-        text-decoration: none;
-        font-size: 2em;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        transition: 0.6s;
-      }
-      #toggle {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-      }
-      #toggle::before {
-        content: "";
-        position: absolute;
-        top: 7px;
-        width: 100%;
-        height: 2px;
-        background-color: #feeadf;
-      }
-      #toggle::after {
-        content: "";
-        position: absolute;
-        bottom: 7px;
-        width: 100%;
-        height: 2px;
-        background-color: #feeadf;
-      }
-    }
-    .img {
-      position: absolute;
-      left: 50rem;
-      top: 10rem;
+      width: 500px;
+      height: 100%;
       img {
-        width: 30rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
-    .content {
-      max-width: 600px;
-      margin-left: 10px;
-      h2 {
-        color: #feeadf;
-        font-size: 2.5em;
-        span {
-          color: #feeadf;
-          font-size: 1.2em;
-        }
-      }
-      p {
-        font-size: 1.2em;
-        color: #feeadf;
-        font-weight: 300;
-      }
-      a {
-        position: relative;
-        display: inline-block;
-        margin-top: 20px;
-        background-color: #feeadf;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: #bb5a3a;
-        border-radius: 20px;
-        font-weight: 800;
-        transition: all 0.3s;
-        &:hover {
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-          transform: translateY(-5px);
-        }
-      }
-    }
-    .sci {
+
+    .logoText {
       position: absolute;
-      display: flex;
-      flex-direction: column;
-      right: 100px;
-      li {
-        list-style: none;
-        a {
-          position: relative;
-          display: grid;
-          place-items: center;
-          width: 50px;
-          height: 50px;
-          text-decoration: none;
-          border: 1px solid #feeadf;
-          margin: 10px;
-          transition: all 0.5s;
-          .iconfont {
-            font-size: 30px;
-            color: #feeadf;
-          }
-          &:hover {
-            background-color: #feeadf;
-            .iconfont {
-              color: #bb5a3a;
-            }
-          }
-        }
+      top: 40px;
+      left: 100px;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: #bb5a3a;
+      color: #fdf2f0;
+      padding: 0 5px;
+    }
+    h4 {
+      font-size: 1.5em;
+      color: #333;
+      font-weight: 300;
+      span {
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+    }
+    h2 {
+      font-size: 3em;
+      color: #bb5a3a;
+      line-height: 1em;
+    }
+    p {
+      font-size: 1.1em;
+      margin: 20px 0;
+      font-weight: 300;
+    }
+    .btn {
+      background: #bb5a3a;
+      color: #fdf2f0;
+      padding: 10px 20px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border-radius: 20px;
+      transition: all 0.5s;
+      &:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
       }
     }
   }
-  .active header #toggle::before {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  .active header #toggle::after {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  .active {
-    transform: translateX(-400px);
-  }
-  #navigation {
-    position: fixed;
+  .contentBox,
+  .sidebar {
+    position: absolute;
     top: 0;
-    right: -400px;
-    width: 400px;
-    height: 100vh;
-    background-color: #feeadf;
-    z-index: 1;
+    right: 0;
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  }
+  .sidebar {
+    position: fixed;
+    background: #bb5a3a;
     display: grid;
+    justify-content: center;
+    align-items: center;
     place-items: center;
     transition: 0.5s;
-    .active {
-      right: 0;
-    }
-    ul {
-      position: relative;
+    padding: 40px;
+    z-index: 100;
+    right: -100%;
+    .menu {
       display: flex;
       flex-direction: column;
       li {
         list-style: none;
         a {
-          color: #bb5a3a;
+          color: #fdf2f0;
           text-decoration: none;
-          display: inline-block;
           font-size: 2em;
           font-weight: 600;
           text-transform: uppercase;
@@ -192,10 +147,10 @@
             }
           }
         }
-        &:hover {
-          animation: none;
-        }
       }
     }
+  }
+  .active1 {
+    right: 0;
   }
 }

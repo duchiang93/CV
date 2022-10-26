@@ -9,6 +9,7 @@
     <title>Sharon's CV</title>
   </head>
   <body>
+    <!-- home -->
     <div class="toggle" onclick="toggleMenu()"></div>
     <section class="banner" id="home">
       <div class="imgSidebar">
@@ -30,15 +31,82 @@
           </p>
           <a href="#" class="btn">About Me</a>
         </div>
+        <ul class="sci">
+          <li>
+            <a href="#"><i class="iconfont">&#xe650;</i></a>
+          </li>
+          <li>
+            <a href="#"><i class="iconfont">&#xe6fd;</i></a>
+          </li>
+          <li>
+            <a href="#"><i class="iconfont">&#xe7b2;</i></a>
+          </li>
+        </ul>
       </div>
     </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="title">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <div class="textBox">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            minima hic, sunt tempore dolor cum illo. Vero, saepe officiis? Minus
+            harum voluptatum repellendus dolor eligendi laboriosam molestiae
+            sequi quia ab magni maiores delectus assumenda nemo deleniti facere
+            eos atque corporis, vero pariatur dicta ratione et repudiandae enim!
+            Illum soluta saepe corporis recusandae ad reiciendis ratione
+            nesciunt consequuntur, officia debitis voluptate repellat fuga,
+            dignissimos quia nihil placeat quos natus sunt, dolores eligendi
+            nobis voluptatem porro! Eaque porro incidunt voluptatum quibusdam
+            repellat. <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+            voluptatum maiores error provident consequatur nam dolorum aliquid,
+            temporibus consequuntur quasi exercitationem corporis fugiat animi,
+            officia autem mollitia amet ex enim itaque. Dolorem veniam pariatur
+            vitae error laudantium? Tempore ipsam facere necessitatibus
+            reiciendis perferendis molestias iusto fugiat eligendi tenetur
+            inventore sit numquam, porro animi illo ut, eos, doloremque error
+            veritatis rerum?
+          </p>
+        </div>
+        <div class="imgBox">
+          <img src="./IMG/My pic.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <div class="skills" id="skills">
+      <div class="title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+
+    <!-- sidebar -->
     <div class="sidebar">
       <ul class="menu">
         <li>
-          <a href="#"> <i class="iconfont">&#xe6bb;</i>Home</a>
+          <a href="#home" onclick="toggleMenu()">
+            <i class="iconfont">&#xe6bb;</i>Home</a
+          >
         </li>
         <li>
-          <a href="#"> <i class="iconfont">&#xe619;</i>About Me</a>
+          <a href="#about" onclick="toggleMenu()">
+            <i class="iconfont">&#xe619;</i>About Me</a
+          >
         </li>
         <li>
           <a href="#"> <i class="iconfont">&#xe693;</i>Skills</a>

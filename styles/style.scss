@@ -18,13 +18,14 @@
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 1000;
+  &.active {
+    background: #bb5a3a url(../IMG/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
-.active {
-  background: #bb5a3a url(../IMG/close.png);
-  background-size: 25px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 // home
 .banner {
   padding: 100px;
@@ -194,15 +195,16 @@
     }
   }
   .container {
-    position: relative;
+    // position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     flex-wrap: wrap;
     gap: 40px;
+    height: 80vh;
     .card {
-      position: relative;
-      display: flex;
+      // position: relative;
+      // display: flex;
       width: 220px;
       height: 250px;
       background-color: #bb5a3a;
@@ -234,6 +236,9 @@
   padding: 40px;
   z-index: 100;
   right: -100%;
+  &.active {
+    right: 0;
+  }
   .menu {
     display: flex;
     flex-direction: column;
@@ -268,7 +273,4 @@
       }
     }
   }
-}
-.active1 {
-  right: 0;
 }

@@ -21,7 +21,7 @@
   z-index: 1000;
 }
 
-.active {
+.toggle.active {
   background: #bb5a3a url(../IMG/close.png);
   background-size: 25px;
   background-position: center;
@@ -237,26 +237,19 @@
 }
 
 .skills .container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 40px;
+  height: 80vh;
 }
 
 .skills .container .card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 220px;
   height: 250px;
   background-color: #bb5a3a;
@@ -298,6 +291,10 @@
   padding: 40px;
   z-index: 100;
   right: -100%;
+}
+
+.sidebar.active {
+  right: 0;
 }
 
 .sidebar .menu {
@@ -355,9 +352,5 @@
     -webkit-transform: translate3d(0, -0.5em, 0);
             transform: translate3d(0, -0.5em, 0);
   }
-}
-
-.active1 {
-  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

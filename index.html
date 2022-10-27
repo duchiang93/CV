@@ -49,7 +49,6 @@
     <section class="about" id="about">
       <div class="title">
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="content">
         <div class="textBox">
@@ -86,12 +85,73 @@
       <div class="title">
         <h2>Skills</h2>
       </div>
-
       <div class="container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card">
+          <div class="percent" style="--clr: #cadbd7; --num: 85">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+          <div class="number">
+            <h2>85<span>%</span></h2>
+            <p>Html</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="percent" style="--clr: #cadbd7; --num: 70">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+          <div class="number">
+            <h2>70<span>%</span></h2>
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="percent" style="--clr: #cadbd7; --num: 60">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+          <div class="number">
+            <h2>60<span>%</span></h2>
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="percent" style="--clr: #cadbd7; --num: 40">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+          <div class="number">
+            <h2>40<span>%</span></h2>
+            <p>React</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- project -->
+    <div class="project" id="project">
+      <div class="title">
+        <h2>Project</h2>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="title">
+        <h2>Content</h2>
       </div>
     </div>
 
@@ -109,13 +169,19 @@
           >
         </li>
         <li>
-          <a href="#"> <i class="iconfont">&#xe693;</i>Skills</a>
+          <a href="#skills" onclick="toggleMenu()">
+            <i class="iconfont">&#xe693;</i>Skills</a
+          >
         </li>
         <li>
-          <a href="#"> <i class="iconfont">&#xe670;</i>project</a>
+          <a href="#project" onclick="toggleMenu()">
+            <i class="iconfont">&#xe670;</i>project</a
+          >
         </li>
         <li>
-          <a href="#"> <i class="iconfont">&#xe720;</i>Contact</a>
+          <a href="#contact" onclick="toggleMenu()">
+            <i class="iconfont">&#xe720;</i>Contact</a
+          >
         </li>
       </ul>
     </div>

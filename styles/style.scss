@@ -4,6 +4,25 @@
   box-sizing: border-box;
   font-family: Consolas;
   scroll-behavior: smooth;
+  .title {
+    width: 100%;
+    text-align: center;
+    h2 {
+      color: #bb5a3a;
+      font-size: 1.8em;
+      font-weight: 700;
+      letter-spacing: 3px;
+      padding-top: 50px;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      height: 3px;
+      margin: 5px auto 40px;
+      width: 50px;
+      background: #bb5a3a;
+    }
+  }
 }
 
 .toggle {
@@ -123,36 +142,16 @@
 // about
 .about {
   min-height: 100vh;
-  .title {
-    width: 100%;
-    text-align: center;
-    color: #bcae98;
-    h2 {
-      color: #bb5a3a;
-      font-size: 1.8em;
-      font-weight: 700;
-      letter-spacing: 3px;
-      padding-top: 50px;
-    }
-    h2::after {
-      content: "";
-      display: block;
-      height: 3px;
-      margin: 5px auto 40px;
-      width: 50px;
-      background: #bb5a3a;
-    }
-    p {
-      max-width: 700px;
-      display: inline-block;
-      margin-bottom: 40px;
-    }
+  p {
+    max-width: 700px;
+    display: inline-block;
+    margin-bottom: 40px;
   }
   .content {
     display: flex;
     padding: 0 100px;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 80px;
     align-items: center;
     .textBox {
       min-width: 49%;
@@ -174,42 +173,131 @@
 .skills {
   min-height: 100vh;
   background: antiquewhite;
+  justify-content: center;
+  align-items: center;
 
-  .title {
-    width: 100%;
-    text-align: center;
-    h2 {
-      color: #bb5a3a;
-      font-size: 1.8em;
-      font-weight: 700;
-      letter-spacing: 3px;
-      padding-top: 50px;
-    }
-    h2::after {
-      content: "";
-      display: block;
-      height: 3px;
-      margin: 5px auto 40px;
-      width: 50px;
-      background: #bb5a3a;
-    }
-  }
   .container {
-    // position: relative;
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 40px;
     height: 80vh;
     .card {
-      // position: relative;
-      // display: flex;
       width: 220px;
       height: 250px;
       background-color: #bb5a3a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .percent {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        .dot {
+          position: absolute;
+          inset: 5px;
+          z-index: 10;
+          transform: rotate(calc(3.6deg * var(--num)));
+          animation: animateDot 2s linear forwards;
+        }
+        @keyframes animateDot {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(calc(3.6deg * var(--num)));
+          }
+        }
+        ::before {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 10px;
+          height: 10px;
+          background: var(--clr);
+          border-radius: 50%;
+          box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+        }
+
+        svg {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          transform: rotate(270deg);
+          circle {
+            width: 100%;
+            height: 100%;
+            fill: transparent;
+            stroke-width: 3;
+            stroke: #333;
+            transform: translate(5px, 5px);
+          }
+          :nth-child(2) {
+            stroke: var(--clr);
+            stroke-dasharray: 440;
+            stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+            opacity: 0;
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 1.5s;
+          }
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .number {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 1.5s;
+        h2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: antiquewhite;
+          font-weight: 700;
+          font-size: 2.5em;
+          span {
+            font-weight: 300;
+            color: antiquewhite;
+            font-size: 0.5em;
+          }
+        }
+        p {
+          font-weight: 300;
+          font-size: 0.75em;
+          line-height: 2px;
+          letter-spacing: 3px;
+          margin-top: 10px;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.75);
+        }
+      }
     }
   }
+}
+
+// project
+.project {
+  min-height: 100vh;
+}
+
+// contact
+.contact {
+  min-height: 100vh;
+  background: antiquewhite;
 }
 
 // sidebar

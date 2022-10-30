@@ -295,17 +295,19 @@
   padding: 0 100px;
   .content {
     display: flex;
+
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     .projectBox {
       position: relative;
-      width: 325px;
+      width: 450px;
       height: 325px;
       margin: 10px;
       transition: 0.5s;
       text-align: center;
-      .imgBox {
+      .imgBox,
+      .textBox {
         position: absolute;
         top: 0;
         left: 0;
@@ -321,6 +323,20 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+      }
+      .textBox {
+        background: #333;
+        opacity: 0;
+        transition: 0.5s;
+        &:hover {
+          opacity: 1;
+        }
+        h3 {
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-size: 1em;
         }
       }
     }

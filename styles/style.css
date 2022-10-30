@@ -425,7 +425,7 @@
 
 .project .content .projectBox {
   position: relative;
-  width: 325px;
+  width: 450px;
   height: 325px;
   margin: 10px;
   -webkit-transition: 0.5s;
@@ -433,7 +433,8 @@
   text-align: center;
 }
 
-.project .content .projectBox .imgBox {
+.project .content .projectBox .imgBox,
+.project .content .projectBox .textBox {
   position: absolute;
   top: 0;
   left: 0;
@@ -450,7 +451,8 @@
           align-items: center;
 }
 
-.project .content .projectBox .imgBox img {
+.project .content .projectBox .imgBox img,
+.project .content .projectBox .textBox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -458,6 +460,24 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.project .content .projectBox .textBox {
+  background: #333;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project .content .projectBox .textBox:hover {
+  opacity: 1;
+}
+
+.project .content .projectBox .textBox h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1em;
 }
 
 .contact {

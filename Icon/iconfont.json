@@ -6,11 +6,18 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "33519",
-      "name": "home_fill",
-      "font_class": "homefill",
-      "unicode": "e6bb",
-      "unicode_decimal": 59067
+      "icon_id": "29935",
+      "name": "location_fill",
+      "font_class": "locationfill",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "680218",
+      "name": "contact",
+      "font_class": "contact",
+      "unicode": "e603",
+      "unicode_decimal": 58883
     },
     {
       "icon_id": "887903",
@@ -20,6 +27,13 @@
       "unicode_decimal": 58905
     },
     {
+      "icon_id": "4936656",
+      "name": "home-fill",
+      "font_class": "home-fill",
+      "unicode": "e867",
+      "unicode_decimal": 59495
+    },
+    {
       "icon_id": "7712195",
       "name": "个人信息",
       "font_class": "gerenxinxi",
@@ -27,39 +41,53 @@
       "unicode_decimal": 59168
     },
     {
-      "icon_id": "9512669",
-      "name": "twitter",
-      "font_class": "twitter-fill",
-      "unicode": "e63d",
-      "unicode_decimal": 58941
+      "icon_id": "8370797",
+      "name": "project",
+      "font_class": "project",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
     },
     {
       "icon_id": "9785636",
       "name": "facebook",
       "font_class": "facebook",
-      "unicode": "e650",
-      "unicode_decimal": 58960
+      "unicode": "e651",
+      "unicode_decimal": 58961
     },
     {
       "icon_id": "10330916",
       "name": "project",
-      "font_class": "project",
+      "font_class": "project1",
       "unicode": "e670",
       "unicode_decimal": 58992
     },
     {
-      "icon_id": "11215251",
+      "icon_id": "12579338",
       "name": "instagram",
       "font_class": "instagram",
-      "unicode": "e6fd",
-      "unicode_decimal": 59133
+      "unicode": "e737",
+      "unicode_decimal": 59191
     },
     {
-      "icon_id": "20284842",
+      "icon_id": "14401775",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "14679013",
+      "name": "envelope",
+      "font_class": "envelope",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "19418425",
       "name": "github",
       "font_class": "github",
-      "unicode": "e7b2",
-      "unicode_decimal": 59314
+      "unicode": "e728",
+      "unicode_decimal": 59176
     },
     {
       "icon_id": "22630695",

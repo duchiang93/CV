@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1666523382485') format('truetype');
+  src: url('iconfont.ttf?t=1667186905561') format('truetype');
 }
 
 .iconfont {
@@ -11,36 +11,52 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-homefill:before {
-  content: "\e6bb";
+.icon-locationfill:before {
+  content: "\e650";
+}
+
+.icon-contact:before {
+  content: "\e603";
 }
 
 .icon-gerenzhongxin:before {
   content: "\e619";
 }
 
+.icon-home-fill:before {
+  content: "\e867";
+}
+
 .icon-gerenxinxi:before {
   content: "\e720";
 }
 
-.icon-twitter-fill:before {
-  content: "\e63d";
+.icon-project:before {
+  content: "\e60b";
 }
 
 .icon-facebook:before {
-  content: "\e650";
+  content: "\e651";
 }
 
-.icon-project:before {
+.icon-project1:before {
   content: "\e670";
 }
 
 .icon-instagram:before {
-  content: "\e6fd";
+  content: "\e737";
+}
+
+.icon-phone:before {
+  content: "\e683";
+}
+
+.icon-envelope:before {
+  content: "\e659";
 }
 
 .icon-github:before {
-  content: "\e7b2";
+  content: "\e728";
 }
 
 .icon-jinengliang:before {

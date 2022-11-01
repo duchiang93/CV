@@ -295,7 +295,6 @@
   padding: 0 100px;
   .content {
     display: flex;
-
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -345,8 +344,181 @@
 
 // contact
 .contact {
+  position: relative;
+  display: flex;
   min-height: 100vh;
-  background: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  background: #bb5a3a;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: antiquewhite;
+  }
+  .container {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 100;
+    .contactinfo {
+      position: absolute;
+      top: 40px;
+      width: 350px;
+      height: calc(100% - 80px);
+      background: #bb5a3a;
+      z-index: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+      h2 {
+        color: #fdf2f0;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      .info {
+        position: relative;
+        margin: 20px 0;
+        li {
+          position: relative;
+          list-style: none;
+          display: flex;
+          margin: 20px 0;
+          cursor: pointer;
+          align-items: flex-start;
+          span:nth-child(1) {
+            width: 30px;
+            min-width: 30px;
+            .iconfont {
+              max-width: 100%;
+              font-size: 25px;
+              color: #fdf2f0;
+              opacity: 0.5;
+            }
+          }
+          span:nth-child(2) {
+            color: #fdf2f0;
+            margin-left: 10px;
+            font-weight: 300;
+            opacity: 0.8;
+            font-size: 20px;
+          }
+          &:hover span:nth-child(1) .iconfont,
+          &:hover span:nth-child(2) {
+            opacity: 1;
+          }
+        }
+      }
+      .sci {
+        position: relative;
+        display: flex;
+        li {
+          list-style: none;
+          margin-right: 15px;
+          a {
+            text-decoration: none;
+            .iconfont {
+              color: #fdf2f0;
+              opacity: 0.5;
+              font-size: 30px;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .contactForm {
+    position: absolute;
+    padding: 70px 50px;
+    background: #fdf2f0;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    h2 {
+      color: #bb5a3a;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .formBox {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      .inputBox {
+        position: relative;
+        margin: 0 0 35px 0;
+        input,
+        textarea {
+          width: 100% !important;
+          padding: 5px 0;
+          font-size: 18px;
+          font-weight: 300;
+          background: #fdf2f0;
+          color: #333;
+          border: none;
+          border-bottom: 1px solid #777;
+          outline: none;
+          resize: none;
+        }
+        textarea {
+          min-height: 90px;
+        }
+        span {
+          position: absolute;
+          left: 0;
+          padding: 5px 0;
+          font-size: 18px;
+          font-weight: 300;
+          color: #333;
+          transition: 0.3s;
+          pointer-events: none;
+        }
+        input[type="submit"] {
+          position: relative;
+          cursor: pointer;
+          background: #bb5a3a;
+          color: #fdf2f0;
+          border: none;
+          max-width: 150px;
+          padding: 12px;
+          opacity: 1;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      input:focus ~ span,
+      textarea:focus ~ span,
+      input:valid ~ span,
+      textarea:valid ~ span {
+        transform: translateY(-20px);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #bb5a3a;
+      }
+      .w50 {
+        width: 47%;
+      }
+      .w100 {
+        width: 100%;
+      }
+    }
+  }
 }
 
 // sidebar
@@ -371,7 +543,7 @@
   place-items: center;
   transition: 0.5s;
   padding: 40px;
-  z-index: 100;
+  z-index: 200;
   right: -100%;
   &.active {
     right: 0;

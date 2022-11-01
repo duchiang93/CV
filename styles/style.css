@@ -481,8 +481,239 @@
 }
 
 .contact {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #bb5a3a;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
   background: antiquewhite;
+}
+
+.contact .container {
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+.contact .container .contactinfo {
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background: #bb5a3a;
+  z-index: 1;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact .container .contactinfo h2 {
+  color: #fdf2f0;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.contact .container .contactinfo .info {
+  position: relative;
+  margin: 20px 0;
+}
+
+.contact .container .contactinfo .info li {
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact .container .contactinfo .info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+
+.contact .container .contactinfo .info li span:nth-child(1) .iconfont {
+  max-width: 100%;
+  font-size: 25px;
+  color: #fdf2f0;
+  opacity: 0.5;
+}
+
+.contact .container .contactinfo .info li span:nth-child(2) {
+  color: #fdf2f0;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+.contact .container .contactinfo .info li:hover span:nth-child(1) .iconfont,
+.contact .container .contactinfo .info li:hover span:nth-child(2) {
+  opacity: 1;
+}
+
+.contact .container .contactinfo .sci {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .container .contactinfo .sci li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.contact .container .contactinfo .sci li a {
+  text-decoration: none;
+}
+
+.contact .container .contactinfo .sci li a .iconfont {
+  color: #fdf2f0;
+  opacity: 0.5;
+  font-size: 30px;
+}
+
+.contact .container .contactinfo .sci li a .iconfont:hover {
+  opacity: 1;
+}
+
+.contact .contactForm {
+  position: absolute;
+  padding: 70px 50px;
+  background: #fdf2f0;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 150px);
+  height: 100%;
+  -webkit-box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.contact .contactForm h2 {
+  color: #bb5a3a;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.contact .contactForm .formBox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.contact .contactForm .formBox .inputBox {
+  position: relative;
+  margin: 0 0 35px 0;
+}
+
+.contact .contactForm .formBox .inputBox input,
+.contact .contactForm .formBox .inputBox textarea {
+  width: 100% !important;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  background: #fdf2f0;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  resize: none;
+}
+
+.contact .contactForm .formBox .inputBox textarea {
+  min-height: 90px;
+}
+
+.contact .contactForm .formBox .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.contact .contactForm .formBox .inputBox input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  background: #bb5a3a;
+  color: #fdf2f0;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact .contactForm .formBox .inputBox input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.contact .contactForm .formBox input:focus ~ span,
+.contact .contactForm .formBox textarea:focus ~ span,
+.contact .contactForm .formBox input:valid ~ span,
+.contact .contactForm .formBox textarea:valid ~ span {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #bb5a3a;
+}
+
+.contact .contactForm .formBox .w50 {
+  width: 47%;
+}
+
+.contact .contactForm .formBox .w100 {
+  width: 100%;
 }
 
 .contentBox,
@@ -519,7 +750,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 40px;
-  z-index: 100;
+  z-index: 200;
   right: -100%;
 }
 

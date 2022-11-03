@@ -239,15 +239,19 @@
   width: 220px;
   height: 250px;
   background-color: #bb5a3a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills .container .card.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .skills .container .card .percent {
@@ -585,6 +589,8 @@
 .contact .container .contactinfo .info li:hover span:nth-child(1) .iconfont,
 .contact .container .contactinfo .info li:hover span:nth-child(2) {
   opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contact .container .contactinfo .sci {
@@ -607,6 +613,8 @@
   color: #fdf2f0;
   opacity: 0.5;
   font-size: 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contact .container .contactinfo .sci li a .iconfont:hover {

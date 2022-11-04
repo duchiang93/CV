@@ -5,9 +5,9 @@ function toggleMenu() {
   sidebar.classList.toggle("active");
 }
 
-let skills = document.getElementById("skills");
-let percent = document.querySelectorAll(".percent");
-let dot = document.querySelectorAll(".dot");
+// let skills = document.getElementById("skills");
+// let percent = document.querySelectorAll(".percent");
+// let dot = document.querySelectorAll(".dot");
 
 // window.addEventListener("scroll", () => {
 //   let sectionPos = skills.getBoundingClientRect().top;

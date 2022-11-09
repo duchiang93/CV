@@ -15,7 +15,6 @@ function skillAnimate() {
     for (let i = 0; i < card.length; i++) card[i].classList.add("active");
     window.removeEventListener("scroll", skillAnimate);
   } else {
-    // console.log(window.scrollY);
     // console.log("hide progress");
   }
 }

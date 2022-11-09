@@ -3,7 +3,7 @@ window.sr = ScrollReveal({ reset: true });
 sr.reveal(".title", {
   duration: 2500,
   origin: "bottom",
-  distance: "-80px",
+  distance: "-30px",
 });
 
 sr.reveal(".scroll-home", {

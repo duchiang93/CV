@@ -280,6 +280,12 @@
   text-align: justify;
 }
 
+@media (max-width: 500px) {
+  .about .content .textBox p {
+    font-size: 14px;
+  }
+}
+
 .about .content .imgBox {
   margin-left: 40px;
 }
@@ -342,8 +348,8 @@
 
 @media (max-width: 500px) {
   .skills .container .card {
-    width: 180px;
-    height: 200px;
+    width: 160px;
+    height: 190px;
   }
 }
 

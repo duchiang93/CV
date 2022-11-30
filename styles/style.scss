@@ -232,6 +232,10 @@
       p {
         color: #333;
         text-align: justify;
+
+        @include mobile {
+          font-size: 14px;
+        }
       }
     }
     .imgBox {
@@ -274,8 +278,8 @@
       align-items: center;
 
       @include mobile {
-        width: 180px;
-        height: 200px;
+        width: 160px;
+        height: 190px;
       }
 
       &.active {

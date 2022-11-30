@@ -30,14 +30,8 @@ sr.reveal(".project-scroll", {
   distance: "-50px",
 });
 
-sr.reveal(".contactinfo", {
-  duration: 3000,
-  origin: "right",
-  distance: "-100px",
-});
-
-sr.reveal(".contactForm", {
-  duration: 3000,
-  origin: "left",
-  distance: "-100px",
-});
+// sr.reveal(".container", {
+//   duration: 3000,
+//   origin: "top",
+//   distance: "-100px",
+// });

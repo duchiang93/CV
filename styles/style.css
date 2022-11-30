@@ -348,8 +348,9 @@
 
 @media (max-width: 500px) {
   .skills .container .card {
-    width: 160px;
-    height: 190px;
+    width: 155px;
+    height: 185px;
+    padding: 0 15px;
   }
 }
 

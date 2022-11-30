@@ -278,8 +278,9 @@
       align-items: center;
 
       @include mobile {
-        width: 160px;
-        height: 190px;
+        width: 155px;
+        height: 185px;
+        padding: 0 15px;
       }
 
       &.active {

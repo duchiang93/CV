@@ -14,13 +14,13 @@ sr.reveal(".scroll-home", {
 
 sr.reveal(".about-text", {
   duration: 3000,
-  origin: "right",
+  origin: "bottom",
   distance: "-100px",
 });
 
 sr.reveal(".about-IMG", {
   duration: 3000,
-  origin: "left",
+  origin: "top",
   distance: "-100px",
 });
 
@@ -30,8 +30,8 @@ sr.reveal(".project-scroll", {
   distance: "-50px",
 });
 
-// sr.reveal(".container", {
-//   duration: 3000,
-//   origin: "top",
-//   distance: "-100px",
-// });
+sr.reveal(".container", {
+  duration: 3000,
+  origin: "top",
+  distance: "-100px",
+});

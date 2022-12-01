@@ -333,6 +333,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .skills .container {
+    gap: 50px;
+  }
+}
+
 .skills .container .card {
   width: 220px;
   height: 250px;
@@ -433,8 +439,8 @@
 
 .skills .container .card .percent svg :nth-child(2) {
   stroke: var(--clr);
-  stroke-dasharray: 440;
-  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  stroke-dasharray: 440px;
+  stroke-dashoffset: calc(440px - (440px * var(--num)) / 100);
   opacity: 0;
   -webkit-animation: fadeIn 1s linear forwards;
           animation: fadeIn 1s linear forwards;
@@ -798,6 +804,8 @@
     width: 100%;
     margin-left: 0;
     padding: 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 

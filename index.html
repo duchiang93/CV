@@ -264,11 +264,16 @@
               <span>Last Name</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" name="email" required />
+              <input type="email" name="email" required />
               <span>Email Address</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" name="mobile" required />
+              <input
+                type="tel"
+                name="mobile"
+                pattern="[0-9]{4}-[0-9]{6}"
+                required
+              />
               <span>Mobile Number</span>
             </div>
             <div class="inputBox w100">

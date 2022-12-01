@@ -238,31 +238,47 @@
         </div>
         <div class="contactForm">
           <h2>Send a Message</h2>
-          <div class="formBox">
+          <form
+            class="formBox"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="b3ef7518-9919-40d9-a42f-b58fe06892f5"
+            />
+
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from Sharon's website"
+            />
+
             <div class="inputBox w50">
               <input type="text" name="" required />
               <span>First Name</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" name="" required />
+              <input type="text" name="firstName" required />
               <span>Last Name</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" name="" required />
+              <input type="text" name="email" required />
               <span>Email Address</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" name="" required />
+              <input type="text" name="mobile" required />
               <span>Mobile Number</span>
             </div>
             <div class="inputBox w100">
-              <textarea name="" required placeholder=""></textarea>
+              <textarea name="message" required></textarea>
               <span>Write your message here...</span>
             </div>
             <div class="inputBox w100">
               <input type="submit" value="Send" />
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>

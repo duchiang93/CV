@@ -847,6 +847,38 @@
   resize: none;
 }
 
+.contact .contactForm .formBox .inputBox input::-webkit-input-placeholder,
+.contact .contactForm .formBox .inputBox textarea::-webkit-input-placeholder {
+  font-size: 0px;
+}
+
+.contact .contactForm .formBox .inputBox input:-ms-input-placeholder,
+.contact .contactForm .formBox .inputBox textarea:-ms-input-placeholder {
+  font-size: 0px;
+}
+
+.contact .contactForm .formBox .inputBox input::-ms-input-placeholder,
+.contact .contactForm .formBox .inputBox textarea::-ms-input-placeholder {
+  font-size: 0px;
+}
+
+.contact .contactForm .formBox .inputBox input::placeholder,
+.contact .contactForm .formBox .inputBox textarea::placeholder {
+  font-size: 0px;
+}
+
+.contact .contactForm .formBox .inputBox input:focus + span,
+.contact .contactForm .formBox .inputBox input:not(:placeholder-shown) + span,
+.contact .contactForm .formBox .inputBox textarea:focus + span,
+.contact .contactForm .formBox .inputBox textarea:not(:placeholder-shown) + span {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #bb5a3a;
+}
+
 .contact .contactForm .formBox .inputBox textarea {
   min-height: 90px;
 }
@@ -884,18 +916,6 @@
 
 .contact .contactForm .formBox .inputBox input[type="submit"]:hover {
   opacity: 0.8;
-}
-
-.contact .contactForm .formBox input:focus ~ span,
-.contact .contactForm .formBox textarea:focus ~ span,
-.contact .contactForm .formBox input:valid ~ span,
-.contact .contactForm .formBox textarea:valid ~ span {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #bb5a3a;
 }
 
 .contact .contactForm .formBox .w50 {

@@ -19,3 +19,16 @@ function skillAnimate() {
   }
 }
 window.addEventListener("scroll", skillAnimate);
+
+let inputs = document.querySelectorAll("input");
+inputs.forEach((input) => {
+  input.addEventListener("input", function () {
+    if (input.checkValidity()) {
+      input.classList.add("valid");
+      input.classList.remove("invalid");
+    } else {
+      input.classList.remove("valid");
+      input.classList.add("invalid");
+    }
+  });
+});

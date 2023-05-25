@@ -108,21 +108,21 @@
   }
 }
 .banner h4 {
-  font-size: 1.5em;
+  font-size: 40px;
   color: #333;
   font-weight: 300;
 }
 .banner h4 span {
-  font-size: 1.5em;
+  font-size: 60px;
   font-weight: 700;
 }
 .banner h2 {
-  font-size: 3em;
+  font-size: 72px;
   color: #bb5a3a;
   line-height: 1em;
 }
 .banner p {
-  font-size: 1.1em;
+  font-size: 40px;
   margin: 20px 0;
   font-weight: 300;
   text-align: justify;

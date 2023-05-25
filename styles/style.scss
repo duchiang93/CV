@@ -106,7 +106,7 @@
       object-fit: cover;
     }
   }
-
+ 
   .logoText {
     position: absolute;
     top: 40px;
@@ -198,6 +198,7 @@
         }
       }
     }
+  
   }
 }
 
@@ -699,7 +700,7 @@
   width: calc(100% - 650px);
   height: 100%;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   padding: 100px;
 
